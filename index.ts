@@ -3,7 +3,7 @@ let customerList: any[];
 function fetchCustomerList(): void{
 
     const table = document.querySelector('table');
-
+    //mapping out the data here to be pushed into the frontend
     fetch('/db')
         .then((response) => response.json())
         .then((data) => {
